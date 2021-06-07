@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nos équipes | Skurt - Équipe eSport</title> <!-- TITLE A DEF SUR CHAQUE PAGE -->
+    <meta name="description" content="Découvrez nos différentes équipes eSport" /> <!-- DESC A DEF SUR CHAQUE PAGE -->
+    <link rel="icon" href="img/favicon.ico"/> <!-- FAVICON A RENSEIGNER -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3700b764a3.js"></script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+    
+    
+    <script>
+        $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                scrollTop: target.offset().top
+                }, 800);
+                return false;
+            }
+            }
+        });
+        });
+    </script></head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/"><img src="img/9I6-esport-fusion.png" alt="logo 9I6 esport"></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/" class="">ACCUEIL</a>
+            </li>
+            <li>
+                <a href="/nos-equipes" class="active">NOS ÉQUIPES</a>
+            </li>
+            <li>
+                <a href="/staff" class="">STAFF</a>
+            </li>
+            <li>
+                <a href="/stream" class="">STREAM</a>
+            </li>
+            <li>
+                <a href="/partenaires" class="">PARTENAIRES</a>
+            </li>
+            <li>
+                <a href="/boutique" class="">BOUTIQUE</a>
+            </li>
+            <li>
+                <a href="/contact" class="">CONTACT</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+<script>
+    const navSlide = () => {
+
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+        });
+        //Burger animation
+        burger.classList.toggle('toggle');
+
+    });
+
+}
+navSlide();
+</script>
+
+
+<div class="main">
+
+    <nav class="games_nav">
+        <ul>
+                                <li><a href="#4" id="Fortnite">Fortnite</a></li>
+                                    <li><a href="#5" id="Rainbow-Six">Rainbow Six</a></li>
+                            
+        </ul>
+    </nav>
+
+    
+                <div class="equipe_container" id="4">
+                    
+                    <section id="equipe_header">
+                        <h1 class="shadow-title" id="stream_title">Fortnite</h1>
+                        <h1 class="black-title" id="stream_title">Fortnite</h1>
+                        <a href="/palmares" class="btn" id="palmares_btn">PALMARÈS</a>
+                    </section>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,130L480,64L960,120L1440,96L1440,0L960,0L480,0L0,0Z"></path></svg>
+
+                    <section class="players_container">
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>Anthaw</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/Anthaw_" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                                    <a href="https://www.twitch.tv/anthaw" class="twitch"><i class="fab fa-twitch"></i></a>
+                                                                    <a href="https://www.youtube.com/channel/UCEeqPAE9H-c7a9AT6MgrBbw" class="youtube"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>St4rlord</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/St4rlordFTN" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                                    <a href="https://www.twitch.tv/st4rlord__" class="twitch"><i class="fab fa-twitch"></i></a>
+                                                                    <a href="https://www.youtube.com/channel/UC8UXQG_M5MgAtOdGMR1KMbw" class="youtube"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>Tilted</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/32tilted" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                                    <a href="https://www.twitch.tv/32tilted" class="twitch"><i class="fab fa-twitch"></i></a>
+                                                                    <a href="https://www.youtube.com/channel/UCqDqb9UXiBYKaRtKotJb7UA" class="youtube"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>Ssens</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/SsensFn" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                                    <a href="https://www.twitch.tv/ssensfn" class="twitch"><i class="fab fa-twitch"></i></a>
+                                                                    <a href="https://www.youtube.com/channel/UC1MG3ZY1TzNt5SnU3tFhcXw" class="youtube"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>Palochka</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/fs1palochka" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                                    <a href="https://www.twitch.tv/fs_palochkaa" class="twitch"><i class="fab fa-twitch"></i></a>
+                                                                    <a href="https://www.youtube.com/channel/UCIHdg0OgLcJC0z1w53iD9GQ" class="youtube"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>Jenga</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/32Jenga" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                                    <a href="https://www.twitch.tv/no_jenga" class="twitch"><i class="fab fa-twitch"></i></a>
+                                                            </div>
+                        </div>
+                    
+                    </section>
+
+                </div>
+
+        
+                <div class="equipe_container" id="5">
+                    
+                    <section id="equipe_header">
+                        <h1 class="shadow-title" id="stream_title">Rainbow Six</h1>
+                        <h1 class="black-title" id="stream_title">Rainbow Six</h1>
+                        <a href="/palmares" class="btn" id="palmares_btn">PALMARÈS</a>
+                    </section>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,130L480,64L960,120L1440,96L1440,0L960,0L480,0L0,0Z"></path></svg>
+
+                    <section class="players_container">
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>Binot</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/binotR6S" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>Dormen</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/DormenR6" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                                    <a href="https://www.youtube.com/channel/UCL2KF5cbepuh8xtiBq5E_-g" class="youtube"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>Pxrple</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/louisliggg" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>TaX</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/TaX_R6" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                            </div>
+                        </div>
+                                            <div class="player_box">
+                            <img src="uploads/1df5c0f0750de8da5291f4efb474be3a.png" alt="Maillot 9I6 esport">
+                            <h3>oKraZ</h3>
+                            <div class="player_medias">
+                                                                    <a href="https://twitter.com/oKraZ_R6S" class="twitter"><i class="fab fa-twitter"></i></a>
+                                                            </div>
+                        </div>
+                    
+                    </section>
+
+                </div>
+
+        
+</div>
+
+<!-- A METTRE A LA FIN CHAQUE PAGE
+-->
+
+    <footer>
+
+        <section id="footer_banner">
+
+            <div class="footer_box" id="footer_infos">
+                <div id="identity">
+                    <img src="img/9I6-logo.png" alt="logo 9I6">
+                    <h2>9I6 eSport</h2>
+                </div>
+                <span id="desc-footer">9I6 est une équipe multigaming eSport.<br>Nous ne sommes pas encore une structure sous loi 1901</span>
+                <span>Contact: <a href="mailto:contact@9i6esport.fr">contact@9i6esport.fr</a></span>
+                <div class="social-medias">
+                    <a href="https://www.twitch.tv/9i6esport/" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://twitter.com/9I6eSport" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.com/invite/JQQbQKf" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/9i6esport/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UC0U2UOwgMS7lMmkpT44DY3w" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div id="footer_menus">
+                <div class="footer_box" id="box_space">
+                    <h3>Menu</h3>
+                    <span><a href="/">Accueil</a></span>
+                    <span><a href="/nos-equipes">Nos équipes</a></span>
+                    <span><a href="/staff">Staff</a></span>
+                    <span><a href="/stream">Stream</a></span>
+                    <span><a href="/partenaires">Partenaires</a></span>
+                    <span><a href="/boutique">Boutique</a></span>
+                </div>
+                <div class="footer_box">
+                    <h3>Informations légales</h3>
+                    <span><a href="/mentions-legales">Mentions Légales</a></span>
+                    <span><a href="/confidentialite">Politique de Confidentialité</a></span>
+                    <span><a href="/plan-du-site">Plan du Site</a></span>
+                    <span><a href="/contact">Contact</a></span>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="footer_copyright">
+            <div>©2020 9I6 eSport. <span id="responsive_text_collapse">Tous droits réservés </span>| Made by <a href="https://twitter.com/Skyfrid4">Skyfrid</a></div>
+        </div>
+    </footer>
+        
+</body>
+</html>
